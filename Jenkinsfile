@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f demo-container || true
-                docker run -d --name demo-container -p 8090:80 demo-app:v1
+                docker run -d --name demo-container -p 8090:8081 demo-app:v1
                 '''
             }
         }
